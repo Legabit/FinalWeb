@@ -97,7 +97,7 @@ function getLaboratorioList()
 
 }
 
-function uploadDemo()
+function uploadComentarioDemo()
 
 {
 

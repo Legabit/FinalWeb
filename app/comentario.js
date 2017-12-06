@@ -97,7 +97,7 @@ function getComentarioList()
 
 }
 
-function uploadDemo()
+function uploadComentarioDemo()
 
 {
 

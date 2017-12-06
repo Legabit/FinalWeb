@@ -97,7 +97,7 @@ function getFarmaciaList()
 
 }
 
-function uploadDemo()
+function uploadComentarioDemo()
 
 {
 
