@@ -11,19 +11,19 @@ function ComentarioObject(myTitle, myDescription) {
 
 function addComentarioDemo()
 {
-	try
+  try
   {
 
 
     alert("token : " + sessionStorage.token);
 
-  	var myData = new ComentarioObject(
+    var myData = new ComentarioObject(
      $("#title").val(), 
      $("#description").val() 
      );
-  	//alert(myData.toJsonString());
+    alert(myData.toJsonString());
 
-  	 jQuery.ajax({
+     jQuery.ajax({
            type: "POST",
            url: "https://bestmedicineprice.appspot.com/_ah/api/comentario_api/v1/comentario/insert",
            data: myData.toJsonString(),

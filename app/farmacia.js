@@ -11,19 +11,19 @@ function FarmaciaObject(myTitle, myDescription) {
 
 function addFarmaciaDemo()
 {
-	try
+  try
   {
 
 
     alert("token : " + sessionStorage.token);
 
-  	var myData = new FarmaciaObject(
+    var myData = new FarmaciaObject(
      $("#title").val(), 
      $("#description").val() 
      );
-  	//alert(myData.toJsonString());
+    alert(myData.toJsonString());
 
-  	 jQuery.ajax({
+     jQuery.ajax({
            type: "POST",
            url: "https://bestmedicineprice.appspot.com/_ah/api/farmacia_api/v1/farmacia/insert",
            data: myData.toJsonString(),
@@ -97,7 +97,7 @@ function getFarmaciaList()
 
 }
 
-function uploadComentarioDemo()
+function uploadFarmaciaDemo()
 
 {
 

@@ -11,19 +11,19 @@ function LaboratorioObject(myTitle, myDescription) {
 
 function addLaboratorioDemo()
 {
-	try
+  try
   {
 
 
     alert("token : " + sessionStorage.token);
 
-  	var myData = new LaboratorioObject(
+    var myData = new LaboratorioObject(
      $("#title").val(), 
      $("#description").val() 
      );
-  	//alert(myData.toJsonString());
+    alert(myData.toJsonString());
 
-  	 jQuery.ajax({
+     jQuery.ajax({
            type: "POST",
            url: "https://bestmedicineprice.appspot.com/_ah/api/laboratorio_api/v1/laboratorio/insert",
            data: myData.toJsonString(),
@@ -97,7 +97,7 @@ function getLaboratorioList()
 
 }
 
-function uploadComentarioDemo()
+function uploadLaboratorioDemo()
 
 {
 
