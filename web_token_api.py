@@ -762,7 +762,7 @@ class ComentarioApi(remote.Service):
     codigo=-3
           #la funcion josue_m puede actualizar e insertar
           #depende de la ENTRADA de este endpoint method
-   message = CodeMessage(code=codigo, message='Medicine added')
+   message = CodeMessage(code=codigo, message='Comentario added')
   except jwt.DecodeError:
    message = CodeMessage(code=-2, message='Invalid token')
   except jwt.ExpiredSignatureError:
@@ -883,7 +883,7 @@ class FarmaciaApi(remote.Service):
     codigo=-3
           #la funcion josue_m puede actualizar e insertar
           #depende de la ENTRADA de este endpoint method
-   message = CodeMessage(code=codigo, message='Medicine added')
+   message = CodeMessage(code=codigo, message='Drug Store added')
   except jwt.DecodeError:
    message = CodeMessage(code=-2, message='Invalid token')
   except jwt.ExpiredSignatureError:

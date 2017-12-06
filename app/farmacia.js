@@ -25,7 +25,7 @@ function addFarmaciaDemo()
 
      jQuery.ajax({
            type: "POST",
-           url: "https://bestmedicineprice.appspot.com/_ah/api/farmacia_api/v1/farmacia/insert",
+           url: "/_ah/api/farmacia_api/v1/farmacia/insert",
            data: myData.toJsonString(),
            contentType: "application/json; charset=utf-8",
            dataType: "json",
@@ -36,7 +36,7 @@ function addFarmaciaDemo()
        
            error: function (error) {            
                 // error handler
-                alert("error :" + error.message)
+                alert("error prueba:" + error.message)
            }
 
        });
@@ -72,7 +72,7 @@ function getFarmaciaList()
 
      jQuery.ajax({
            type: "POST",
-           url: "https://bestmedicineprice.appspot.com/_ah/api/farmacia_api/v1/farmacia/list",
+           url: "/_ah/api/farmacia_api/v1/farmacia/list",
            data: myData.toJsonString(),
            contentType: "application/json; charset=utf-8",
            dataType: "json",

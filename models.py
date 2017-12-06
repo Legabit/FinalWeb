@@ -141,7 +141,7 @@ class Comentario(CustomBaseModel):
  
     ### comentario ####
     def comentario_m(self, data, empresakey):
-        comentario  = comentario()#Crea una variable de tipo comentario
+        comentario  = Comentario()#Crea una variable de tipo comentario
         comentario.populate(data)#Llena la variables con los datos dados por el request en main.py
         comentario.empresa_key=empresakey#inserta el entityKey de la empresa que es un parametro que se manda en main.py
         comentario.put()#inserta o hace un update depende del main.py
@@ -160,7 +160,7 @@ class Farmacia(CustomBaseModel):
  
     ### farmacia ####
     def farmacia_m(self, data, empresakey):
-        farmacia  = farmacia()#Crea una variable de tipo farmacia
+        farmacia  = Farmacia()#Crea una variable de tipo farmacia
         farmacia.populate(data)#Llena la variables con los datos dados por el request en main.py
         farmacia.empresa_key=empresakey#inserta el entityKey de la empresa que es un parametro que se manda en main.py
         farmacia.put()#inserta o hace un update depende del main.py
@@ -177,7 +177,7 @@ class Laboratorio(CustomBaseModel):
  
     ### Laboratorio ####
     def laboratorio_m(self, data, empresakey):
-        laboratorio  = Tweet()#Crea una variable de tipo Tweet
+        laboratorio  = Laboratorio()#Crea una variable de tipo Tweet
         laboratorio.populate(data)#Llena la variables con los datos dados por el request en main.py
         laboratorio.empresa_key=empresakey#inserta el entityKey de la empresa que es un parametro que se manda en main.py
         laboratorio.put()#inserta o hace un update depende del main.py
